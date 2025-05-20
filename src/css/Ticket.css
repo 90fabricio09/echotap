@@ -173,13 +173,13 @@
     }
 }
 
-@media (height < 710px) {
+@media (height < 810px) {
     .aba {
         max-height: 500px;
     }
 }
 
-@media (height < 600px) {
+@media (height < 730px) {
     .aba {
         max-height: 400px;
     }
