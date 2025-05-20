@@ -187,7 +187,8 @@
 
 @media (width < 500px) {
     .aba {
-        max-width: 300px;
+        max-width: 100%;
+        margin-left: 15px;
     }
 
     .content-sup {
@@ -196,8 +197,7 @@
     }
 
     .aba h2 {
-        font-size: 20px;
-        color: #ffffff;
+        font-size: 30px;
         margin-top: 30px;
         margin-bottom: 20px;
     }
