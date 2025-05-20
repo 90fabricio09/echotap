@@ -39,14 +39,14 @@ function Ticket() {
                     <h2>Olá<span>!</span> Como podemos te ajudar<span>?</span></h2>
                     <div className="global-content">
                         <div className="content-sup">
-                            <a href="https://wa.me/5511931501833" target="_blank">
+                            <a href="https://wa.me/5511994921448" target="_blank">
                                 <h3>Contato via WhatsApp</h3>
                                 <p>Normalmente respondemos em até 10 min.</p>
                                 <i className="bi bi-whatsapp"></i>
                             </a>
                         </div>
                         <div className="content-sup">
-                            <a href="https://www.instagram.com/astrixo.web/" target="_blank">
+                            <a href="https://www.instagram.com/echotapoficial" target="_blank">
                                 <h3>Nosso Instagram</h3>
                                 <p>Venha nos conhecer mais de perto.</p>
                                 <i className="bi bi-instagram"></i>
