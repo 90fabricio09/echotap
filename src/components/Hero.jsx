@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Hero.css';
 import Counter from './Counter';
+import Card from '../assets/Card.png';
 
 const Hero = () => {
     return (
@@ -41,13 +42,7 @@ const Hero = () => {
                 </div>
                 <div className="hero-visual">
                     <div className="card-preview">
-                        <div className="card-front">
-                            <div className="card-content">
-                                <div className="card-info">
-                                    <h1>EchoTap</h1>
-                                </div>
-                            </div>
-                        </div>
+                        <img src={Card} alt="EchoTap Card" className="card-image" />
                     </div>
                     <div className="floating-elements">
                         <div className="floating-icon">
