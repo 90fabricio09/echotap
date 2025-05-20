@@ -46,19 +46,19 @@ const FAQ = () => {
         },
         {
             question: "Quais informações posso compartilhar?",
-            answer: "Você pode compartilhar todas as suas informações profissionais, como nome, cargo, empresa, telefone, email, redes sociais, site, portfólio e muito mais. Tudo é personalizável de acordo com suas necessidades."
+            answer: "Você pode compartilhar todas as suas informações profissionais, como nome, telefone, email, redes sociais, site, portfólio e muito mais. Tudo é personalizável de acordo com suas necessidades."
         },
         {
             question: "O EchoTap funciona em qualquer smartphone?",
             answer: "Sim! O EchoTap funciona em qualquer smartphone que tenha tecnologia NFC, que é a maioria dos aparelhos Android e iPhone a partir do iPhone 7."
         },
         {
-            question: "Como faço para personalizar meu cartão?",
-            answer: "Você pode personalizar seu cartão através do nosso painel de controle, escolhendo cores, fontes, layout e adicionando suas informações. Também oferecemos opções de design personalizado para empresas."
+            question: "Como faço para comprar o meu cartão?",
+            answer: "Para comprar seu cartão EchoTap, entre em contato conosco via WhatsApp ou Instagram. Envie as informações que deseja incluir no seu cartão e nossa equipe irá auxiliá-lo em todo o processo de personalização e compra.",
         },
         {
             question: "É seguro compartilhar minhas informações?",
-            answer: "Sim! Utilizamos tecnologia de criptografia avançada para proteger suas informações. Além disso, você tem controle total sobre quais dados são compartilhados e pode revogar o acesso a qualquer momento."
+            answer: "Sim! Utilizamos tecnologia de criptografia avançada para proteger suas informações, além disso, você tem controle total sobre quais dados são compartilhados."
         },
         {
             question: "Quanto custa o EchoTap?",
