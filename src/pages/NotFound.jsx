@@ -1,35 +1,45 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import '../css/NotFound.css';
 
 const NotFound = () => {
     return (
-        <div style={{
-            minHeight: '100vh',
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            background: 'linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%)',
-            color: '#2563eb',
-            textAlign: 'center',
-        }}>
-            <h1 style={{ fontSize: '5rem', fontWeight: 800, marginBottom: '1rem' }}>404</h1>
-            <h2 style={{ fontSize: '2rem', fontWeight: 600, marginBottom: '1rem' }}>Página não encontrada</h2>
-            <p style={{ color: '#64748b', fontSize: '1.2rem', marginBottom: '2rem' }}>
-                Opa! Parece que você tentou acessar uma página que não existe.
-            </p>
-            <a href="/" style={{
-                background: '#2563eb',
-                color: '#fff',
-                padding: '0.9rem 2rem',
-                borderRadius: '1rem',
-                fontWeight: 600,
-                textDecoration: 'none',
-                fontSize: '1.1rem',
-                boxShadow: '0 4px 16px rgba(37,99,235,0.08)'
-            }}>
-                Voltar para o início
-            </a>
-        </div>
+        <section className="notfound-section">
+            <div className="notfound-content">
+                <div className="notfound-text">
+                    <h1 className="notfound-title">404</h1>
+                    <p className="notfound-description">
+                        Ops! Parece que você se perdeu. A página que você está procurando não existe ou foi movida.
+                    </p>
+                    <Link to="/" className="notfound-button">
+                        Voltar para Home
+                        <i className="bi bi-arrow-right"></i>
+                    </Link>
+                </div>
+                <div className="notfound-visual">
+                    <div className="card-preview">
+                        <div className="card-front">
+                            <div className="card-content">
+                                <div className="card-info">
+                                    <h1>EchoTap</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="floating-elements">
+                        <div className="floating-icon">
+                            <i className="bi bi-search"></i>
+                        </div>
+                        <div className="floating-icon">
+                            <i className="bi bi-exclamation-circle"></i>
+                        </div>
+                        <div className="floating-icon">
+                            <i className="bi bi-house"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     );
 };
 

@@ -23,6 +23,10 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
             <div className="navbar-container">
@@ -44,13 +48,13 @@ const Navbar = () => {
 
                 <div className={`navbar-menu ${isMenuOpen ? 'active' : ''}`}>
                     <ul className="navbar-links">
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#features">Recursos</a></li>
-                        <li><a href="#faq">Dúvidas</a></li>
+                        <li><a href="#" onClick={handleLinkClick}>Início</a></li>
+                        <li><a href="#features" onClick={handleLinkClick}>Recursos</a></li>
+                        <li><a href="#faq" onClick={handleLinkClick}>Dúvidas</a></li>
                     </ul>
                     <div className="navbar-buttons">
                         {/* <button className="nav-button login">Entrar</button> */}
-                        <a href='https://wa.me/5511994921448' target='_blank' className="nav-button register">Contato</a>
+                        <a href='https://wa.me/5511994921448' target='_blank' className="nav-button register" onClick={handleLinkClick}>Contato</a>
                     </div>
                 </div>
             </div>
