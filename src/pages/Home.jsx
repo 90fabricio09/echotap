@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import Ticket from '../components/Ticket';
 import Hero from '../components/Hero';
 import Features from '../components/Features';
+import Image from '../components/Image';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
@@ -13,6 +14,7 @@ const Home = () => {
             <Ticket />
             <Hero />
             <Features />
+            <Image />
             <FAQ />
             <Footer />
         </>
