@@ -31,8 +31,8 @@ const Hero = () => {
                             <span className="stat-label">Clientes Satisfeitos</span>
                         </div>
                         <div className="stat-item">
-                            <Counter end={100} suffix="%" /> {/* duration={3000} */}
-                            <span className="stat-label">Taxa de Conversão</span>
+                            <Counter end={100} suffix="+" /> {/* duration={3000} */}
+                            <span className="stat-label">Cartões Ativos</span>
                         </div>
                         <div className="stat-item">
                             <span className="stat-number">24/7</span>

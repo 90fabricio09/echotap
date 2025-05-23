@@ -9,9 +9,19 @@ const Features = () => {
             description: "Compartilhe suas informações de contato com um simples toque do cartão no smartphone."
         },
         {
-            icon: "bi bi-graph-up-arrow",
-            title: "Acompanhe Interações",
-            description: "Monitore quantas pessoas visualizaram seu perfil e quais informações foram acessadas."
+            icon: "bi bi-currency-dollar",
+            title: "Economia Sustentável",
+            description: "Reduza custos com impressão e contribua para um mundo mais sustentável."
+        },
+        {
+            icon: "bi bi-people",
+            title: "Networking Eficiente",
+            description: "Destaque-se em eventos e encontros profissionais com uma solução moderna e memorável."
+        },
+        {
+            icon: "bi bi-stars",
+            title: "Experiência Moderna",
+            description: "Destaque-se com uma solução tecnológica que impressiona e transforma a forma de se conectar."
         },
         {
             icon: "bi bi-shield-check",
@@ -19,19 +29,9 @@ const Features = () => {
             description: "Tecnologia NFC segura e criptografada para proteger suas informações pessoais."
         },
         {
-            icon: "bi bi-palette",
-            title: "Design Personalizado",
-            description: "Crie um cartão único com sua identidade visual e informações personalizadas."
-        },
-        {
             icon: "bi bi-globe",
             title: "Acessível em Qualquer Lugar",
             description: "Seu cartão digital funciona em qualquer smartphone com NFC, sem necessidade de aplicativos."
-        },
-        {
-            icon: "bi bi-currency-dollar",
-            title: "Economia Sustentável",
-            description: "Reduza custos com impressão e contribua para um mundo mais sustentável."
         }
     ];
 
