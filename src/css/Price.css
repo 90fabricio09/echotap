@@ -168,7 +168,8 @@
 
 .period {
     font-size: 1rem;
-    color: #64748b;
+    /* color: #64748b; */
+    color: #2563eb;
 }
 
 .pricing-features {

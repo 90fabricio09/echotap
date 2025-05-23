@@ -16,7 +16,7 @@ const Price = () => {
                     </p>
                     <img 
                         src={Imagem} 
-                        alt="EchoTap imagem" 
+                        alt="EchoTap Imagem" 
                         className="price-image" 
                     />
                 </div>
@@ -28,9 +28,9 @@ const Price = () => {
                         </div>
                         <h3 className="pricing-plan">EchoTap Card</h3>
                         <div className="pricing-price">
-                            <span className="original-price">R$ 100,00</span>
-                            <span className="price">R$ 70,00</span>
-                            <span className="period">investimento único</span>
+                            <span className="original-price">R$ 114,90</span>
+                            <span className="price">R$ 79,90</span>
+                            <span className="period">Valor no PIX</span>
                         </div>
                         <ul className="pricing-features">
                             <li><i className="bi bi-check-circle"></i> Sem mensalidades</li>
