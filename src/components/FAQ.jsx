@@ -62,7 +62,7 @@ const FAQ = () => {
         },
         {
             question: "Quanto custa o EchoTap?",
-            answer: "O EchoTap tem um preço único de R$ 70,00 por cartão, sem mensalidades. É um investimento único que transforma sua forma de networking."
+            answer: "O EchoTap tem um preço único de R$ 79,90 por cartão, sem mensalidades. É um investimento único que transforma sua forma de networking."
         }
     ];
 
