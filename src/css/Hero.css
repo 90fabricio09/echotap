@@ -8,6 +8,28 @@
     scroll-behavior: smooth;
 }
 
+*::selection {
+    color: #ffffff;
+    background-color: #2563eb;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 5px 0px 0px 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
 html, body {
     width: 100%;
     overflow-x: hidden;
