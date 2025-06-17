@@ -50,6 +50,7 @@ const Navbar = () => {
                     <ul className="navbar-links">
                         <li><a href="#" onClick={handleLinkClick}>Início</a></li>
                         <li><a href="#features" onClick={handleLinkClick}>Recursos</a></li>
+                        <li><a href="#price" onClick={handleLinkClick}>Adquirir</a></li>
                         <li><a href="#faq" onClick={handleLinkClick}>Dúvidas</a></li>
                     </ul>
                     <div className="navbar-buttons">

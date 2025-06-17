@@ -37,20 +37,41 @@
 .price-section {
     position: relative;
     z-index: 2;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 4rem;
     align-items: center;
+    padding: 0 2rem;
+}
+
+.price-content-container {
+    text-align: left;
+}
+
+.price-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.price-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1e293b;
+    margin-bottom: 2rem;
 }
 
 .price-image {
-    width: 100%;
-    max-height: 500px;
+    width: 400px !important;
+    height: auto !important;
+    max-height: 400px !important;
     object-fit: contain;
     border-radius: 12px;
     transition: transform 0.3s ease;
+    margin: 0.5rem 0 2rem 0;
+    display: block;
 }
 
 .price-content {
@@ -88,15 +109,36 @@
     background: #1d4ed8;
 }
 
+.pricing-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
 .pricing-card {
     background: white;
     border-radius: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 3rem;
+    padding: 2rem;
     width: 100%;
-    max-width: 400px;
     position: relative;
     border: 2.5px solid #2563eb;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+}
+
+.pricing-card.featured {
+    border: 2.5px solid #2563eb;
+    transform: scale(1.02);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.02) translateY(-5px);
 }
 
 .pricing-content {
@@ -107,25 +149,25 @@
 }
 
 .pricing-icon {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     background: rgba(37, 99, 235, 0.1);
     border-radius: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .pricing-icon i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #2563eb;
 }
 
 .pricing-plan {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #1e293b;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     font-weight: 600;
 }
 
@@ -133,59 +175,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
-}
-
-.original-price {
-    font-size: 1.5rem;
-    color: #94a3b8;
-    text-decoration: line-through;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
-}
-
-.discount-badge {
-    position: absolute;
-    top: -1.2rem;
-    left: 2rem;
-    background: #2563eb;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0.3rem 1.2rem;
-    border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
-    box-shadow: 0 2px 8px 0 rgba(37,99,235,0.15);
-    z-index: 2;
-    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #2563eb;
     font-weight: 700;
     margin-bottom: 0.25rem;
 }
 
 .period {
-    font-size: 1rem;
-    /* color: #64748b; */
+    font-size: 0.9rem;
     color: #2563eb;
 }
 
 .pricing-features {
     list-style: none;
     padding: 0;
-    margin: 0 0 2rem 0;
+    margin: 0 0 1.5rem 0;
     width: 100%;
 }
 
 .pricing-features li {
-    padding: 0.75rem 0;
+    padding: 0.5rem 0;
     color: #1e293b;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    font-size: 0.95rem;
 }
 
 .pricing-features i {
@@ -196,35 +215,62 @@
 .pricing-button {
     background: #2563eb;
     color: white;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 0.75rem;
     text-decoration: none;
     font-weight: 600;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     transition: all 0.3s ease;
+    font-size: 0.95rem;
 }
 
 .pricing-button:hover {
     background: #1d4ed8;
 }
 
+.discount-badge {
+    position: absolute;
+    top: -1rem;
+    left: 1.5rem;
+    background: #2563eb;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px 0 rgba(37,99,235,0.15);
+    z-index: 2;
+    letter-spacing: 0.5px;
+}
+
 @media (max-width: 1024px) {
     .price-section {
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+        max-width: 1000px;
+    }
+
+    .price-content-container {
+        text-align: center;
+    }
+
+    .price-image {
+        margin: 0.5rem auto 2rem auto;
+    }
+
+    .pricing-cards-container {
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
 
 @media (max-width: 768px) {
-    .price-container {
-        padding: 4rem 1rem;
-    }
-
     .price-section {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 5rem;
+        padding: 0 1rem;
     }
 
     .price-title {
@@ -233,89 +279,40 @@
 
     .price-description {
         font-size: 1rem;
-        padding: 0 1rem;
     }
 
     .price-image {
-        max-height: 400px;
-        margin: 0 auto;
+        width: 300px !important;
+        max-height: 300px !important;
+    }
+
+    .pricing-cards-container {
+        gap: 1.5rem;
     }
 
     .pricing-card {
-        padding: 2rem;
-        margin: 0 auto;
-        min-width: 0;
-        width: 80%;
-    }
-
-    .discount-badge {
-        left: 1rem;
-        top: -1.2rem;
-        font-size: 0.95rem;
-        padding: 0.25rem 1rem;
-    }
-
-    .price {
-        font-size: 2.5rem;
+        padding: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .price-container {
-        padding: 3rem 1rem;
-    }
-
     .price-title {
         font-size: 1.75rem;
     }
 
-    .price-description {
-        font-size: 0.95rem;
+    .price-image {
+        width: 250px !important;
+        max-height: 250px !important;
     }
 
-    .price-image {
-        max-height: 300px;
+    .pricing-cards-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
     }
 
     .pricing-card {
-        padding: 1.2rem;
-        max-width: 99vw;
+        padding: 1.5rem;
     }
-
-    .discount-badge {
-        left: 0.5rem;
-        top: -1rem;
-        font-size: 0.9rem;
-        padding: 0.2rem 0.7rem;
-    }
-
-    .price-section {
-        gap: 5rem;
-    }
-}
-
-.price-content-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.price-title {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #1e293b;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-}
-
-.price-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #64748b;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 2rem;
 }
 
 .price-title .gradient-text {

@@ -122,7 +122,7 @@
 }
 
 /* Estilos responsivos */
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .menu-toggle {
         display: flex;
     }
@@ -147,7 +147,7 @@
         background: white;
         padding: 1rem;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1rem;
         transform: translateY(-100%);
         opacity: 0;
@@ -166,6 +166,8 @@
         flex-direction: column;
         width: 100%;
         gap: 1rem;
+        align-items: center;
+        text-align: center;
     }
 
     .navbar-links li {
@@ -175,12 +177,14 @@
     .navbar-links a {
         display: block;
         padding: 0.5rem 0;
+        text-align: center;
     }
 
     .navbar-buttons {
         flex-direction: column;
         width: 100%;
         gap: 0.5rem;
+        align-items: center;
     }
 
     .nav-button {
