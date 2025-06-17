@@ -471,7 +471,7 @@ html, body {
 .video-container {
     position: relative;
     width: 80%;
-    max-width: 800px;
+    max-width: 650px;
     background: #000;
     border-radius: 16px;
     overflow: hidden;
