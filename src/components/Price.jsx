@@ -22,7 +22,7 @@ const Price = () => {
                 </div>
                 <div className="pricing-cards-container">
                     {/* Plano Básico */}
-                    <div className="pricing-card featured">
+                    <div className="pricing-card">
                         <span className="discount-badge">Mais Popular</span>
                         <div className="pricing-content">
                             <div className="pricing-icon">
