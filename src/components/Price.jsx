@@ -22,7 +22,8 @@ const Price = () => {
                 </div>
                 <div className="pricing-cards-container">
                     {/* Plano Básico */}
-                    <div className="pricing-card">
+                    <div className="pricing-card featured">
+                        <span className="discount-badge">Mais Popular</span>
                         <div className="pricing-content">
                             <div className="pricing-icon">
                                 <i className="bi bi-credit-card"></i>
@@ -46,8 +47,7 @@ const Price = () => {
                     </div>
 
                     {/* Plano Personalizado */}
-                    <div className="pricing-card featured">
-                        <span className="discount-badge">Mais Popular</span>
+                    <div className="pricing-card">
                         <div className="pricing-content">
                             <div className="pricing-icon">
                                 <i className="bi bi-stars"></i>
