@@ -54,7 +54,7 @@ const Price = () => {
                             </div>
                             <h3 className="pricing-plan">EchoTap Personalizado</h3>
                             <div className="pricing-price">
-                                <span className="price">R$ 149,90</span>
+                                <span className="price">R$ 139,90</span>
                                 <span className="period">Valor no PIX</span>
                             </div>
                             <ul className="pricing-features">
