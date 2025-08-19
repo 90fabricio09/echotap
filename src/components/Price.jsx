@@ -20,7 +20,7 @@ const Price = () => {
                         className="price-image" 
                     />
                 </div>
-                <div className="pricing-cards-container">
+                <div className="pricing-cards-container single-card">
                     {/* Plano Básico */}
                     <div className="pricing-card">
                         <span className="discount-badge">Mais Popular</span>
@@ -47,7 +47,7 @@ const Price = () => {
                     </div>
 
                     {/* Plano Personalizado */}
-                    <div className="pricing-card">
+                    {/* <div className="pricing-card">
                         <div className="pricing-content">
                             <div className="pricing-icon">
                                 <i className="bi bi-stars"></i>
@@ -69,7 +69,7 @@ const Price = () => {
                                 <i className="bi bi-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

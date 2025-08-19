@@ -41,13 +41,25 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     padding: 0 2rem;
 }
 
+/* Quando há apenas um card, ajusta o layout da seção */
+.price-section:has(.single-card) {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1200px;
+}
+
+
+
 .price-content-container {
     text-align: left;
+    justify-self: center;
+    align-self: center;
 }
 
 .price-title {
@@ -117,11 +129,23 @@
     max-width: 1000px;
 }
 
+/* Quando há apenas um card, centraliza */
+.pricing-cards-container.single-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    margin: 0 auto;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
 .pricing-card {
     background: white;
     border-radius: 1.5rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     position: relative;
     border: 2.5px solid #2563eb;
@@ -256,6 +280,8 @@
 
     .price-content-container {
         text-align: center;
+        justify-self: center;
+        align-self: center;
     }
 
     .price-image {
@@ -264,6 +290,19 @@
 
     .pricing-cards-container {
         max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Remove as regras específicas para single-card em telas menores */
+    .price-section:has(.single-card) {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        max-width: 1000px;
+    }
+
+    /* Mantém a largura do card consistente */
+    .pricing-cards-container.single-card {
+        max-width: 350px;
         margin: 0 auto;
     }
 }
@@ -293,6 +332,12 @@
     .pricing-card {
         padding: 1.5rem;
     }
+
+    /* Ajusta o single-card para mobile */
+    .pricing-cards-container.single-card {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -307,11 +352,17 @@
 
     .pricing-cards-container {
         grid-template-columns: 1fr;
-        max-width: 400px;
+        max-width: 100%;
     }
 
     .pricing-card {
         padding: 1.5rem;
+    }
+
+    /* Ajusta o single-card para mobile pequeno */
+    .pricing-cards-container.single-card {
+        max-width: 350px;
+        margin: 0 auto;
     }
 }
 
