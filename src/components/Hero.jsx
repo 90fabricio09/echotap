@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../css/Hero.css';
 import Counter from './Counter';
 import Card from '../assets/Card.png';
-import Video from '../assets/Vídeo.mp4';
+import Video from '../assets/Video.mp4';
 
 const Hero = () => {
     const [showVideo, setShowVideo] = useState(false);
@@ -88,5 +88,6 @@ const Hero = () => {
         </header>
     );
 };
+
 
 export default Hero; 
