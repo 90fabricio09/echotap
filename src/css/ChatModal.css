@@ -275,7 +275,7 @@
     border: none;
     outline: none;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 16px; /* Aumentado de 14px para 16px para prevenir zoom no mobile */
     font-family: 'Poppins', sans-serif;
     padding: 12px 0;
     min-height: 40px;
@@ -390,6 +390,13 @@
     .message-content {
         max-width: 85%;
     }
+
+    /* Prevenir zoom automático no campo de texto no mobile */
+    .chat-input {
+        font-size: 16px !important; /* Força 16px para prevenir zoom */
+        transform: scale(1); /* Previne zoom */
+        -webkit-text-size-adjust: 100%; /* Previne ajuste automático de texto */
+    }
 }
 
 @media (max-width: 480px) {
@@ -413,6 +420,15 @@
     .message-content {
         max-width: 90%;
         padding: 10px 14px;
+    }
+
+    /* Regras adicionais para telas muito pequenas */
+    .chat-input {
+        font-size: 16px !important;
+        transform: scale(1) !important;
+        -webkit-text-size-adjust: 100% !important;
+        -webkit-appearance: none; /* Remove estilos nativos do iOS */
+        border-radius: 0; /* Remove bordas arredondadas que podem causar zoom */
     }
 }
 
