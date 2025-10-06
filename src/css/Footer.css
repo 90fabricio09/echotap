@@ -201,6 +201,44 @@
     .footer-contact {
         align-items: center;
     }
+    
+    .footer-contact-item {
+        justify-content: center;
+    }
+}
+
+/* Fix for 600-700px range */
+@media (max-width: 700px) and (min-width: 601px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-contact {
+        align-items: center;
+    }
+    
+    .footer-contact-item {
+        justify-content: center;
+    }
+    
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
 }
 
 /* Mobile Styles */
@@ -225,6 +263,10 @@
     }
 
     .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-contact-item {
         justify-content: center;
     }
 
