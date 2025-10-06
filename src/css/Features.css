@@ -1,0 +1,231 @@
+/* Features Apple-style */
+.features-apple {
+    position: relative;
+    background: #000000;
+    padding: 100px 0 60px 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.features-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.features-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 80px;
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.features-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.features-highlight {
+    background: #2563eb;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.features-description {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #a1a1a6;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    text-align: left;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.features-visible .feature-card {
+    animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.feature-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.feature-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.feature-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(37, 99, 235, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+}
+
+.feature-icon i {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+.feature-title {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.feature-description {
+    font-size: clamp(0.8rem, 1.5vw, 0.9rem);
+    color: #a1a1a6;
+    line-height: 1.5;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Animações Apple-style */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .features-apple {
+        padding: 80px 0 50px 0;
+    }
+
+    .features-header {
+        margin-bottom: 60px;
+    }
+
+    .features-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .features-description {
+        font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 12px;
+    }
+
+    .feature-icon i {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .features-apple {
+        padding: 60px 0 40px 0;
+    }
+
+    .features-header {
+        margin-bottom: 40px;
+    }
+
+    .feature-card {
+        padding: 24px 20px;
+    }
+
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 16px;
+    }
+
+    .feature-icon i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .features-header,
+    .feature-card {
+        animation: none;
+    }
+    
+    .feature-card:hover {
+        transform: none;
+    }
+    
+    .feature-card:hover .feature-icon {
+        transform: none;
+    }
+}

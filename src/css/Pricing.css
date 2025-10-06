@@ -1,0 +1,333 @@
+/* About Apple-style */
+.about-apple {
+    position: relative;
+    background: #000000;
+    padding: 70px 20px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-content {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    width: 100%;
+}
+
+.about-text {
+    animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.about-highlight {
+    color: #2563eb;
+}
+
+.about-description {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: #a1a1a6;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+.about-card-preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-card-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-pricing {
+    animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0.2s backwards;
+}
+
+.pricing-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 2px solid #2563eb;
+    border-radius: 20px;
+    padding: 40px 24px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.2);
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -17px;
+    left: 20px;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.pricing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.pricing-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.pricing-icon i {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.pricing-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.pricing-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.price-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2563eb;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.price-method {
+    font-size: 0.9rem;
+    color: #a1a1a6;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    justify-content: center;
+    width: 100%;
+}
+
+.pricing-features i {
+    color: #2563eb;
+    font-size: 1.2rem;
+}
+
+.pricing-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 32px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.pricing-button:hover {
+    background: #1d4ed8;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Animações Apple-style */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .about-apple {
+        padding: 50px 0 80px 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .about-description {
+        font-size: clamp(0.9rem, 1.8vw, 1.1rem);
+    }
+
+    .about-card-image {
+        max-width: 250px;
+    }
+
+    .pricing-card {
+        padding: 32px 20px;
+        max-width: 340px;
+    }
+
+    .pricing-badge {
+        top: -15px;
+        left: 15px;
+        padding: 6px 16px;
+        font-size: 12px;
+    }
+
+    .price-value {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-apple {
+        padding: 40px 0 60px 0;
+    }
+
+    .about-content {
+        gap: 40px;
+    }
+
+    .about-card-image {
+        max-width: 200px;
+    }
+
+    .pricing-card {
+        padding: 24px 16px;
+        max-width: 300px;
+    }
+
+    .pricing-content {
+        gap: 14px;
+    }
+
+    .price-value {
+        font-size: 1.75rem;
+    }
+
+    .pricing-button {
+        padding: 14px 28px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+    .pricing-badge {
+        top: -12px;
+        left: 10px;
+        padding: 4px 12px;
+        font-size: 11px;
+    }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .about-text,
+    .about-pricing {
+        animation: none;
+    }
+    
+    .about-card-image:hover,
+    .pricing-card:hover,
+    .pricing-button:hover {
+        transform: none;
+    }
+}

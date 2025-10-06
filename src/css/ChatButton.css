@@ -1,0 +1,131 @@
+/* Chat Button Styles */
+.chat-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(100px) scale(0.5);
+    animation: chatButtonAppear 0.8s ease-out 0.5s forwards;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 32px rgba(37, 99, 235, 0.6);
+}
+
+.chat-button:active {
+    transform: scale(0.95);
+}
+
+.chat-button-icon {
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.chat-button:hover .chat-button-icon {
+    transform: scale(1.1);
+}
+
+.chat-button-pulse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    z-index: 1;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .chat-button {
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .chat-button-icon {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-button {
+        bottom: 16px;
+        right: 16px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .chat-button-icon {
+        font-size: 20px;
+    }
+}
+
+/* Animação de entrada do botão */
+@keyframes chatButtonAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.3);
+    }
+    60% {
+        opacity: 0.9;
+        transform: translateY(-5px) scale(1.05);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .chat-button,
+    .chat-button-pulse {
+        animation: none;
+    }
+    
+    .chat-button {
+        opacity: 1;
+        transform: none;
+    }
+    
+    .chat-button:hover {
+        transform: none;
+    }
+}
