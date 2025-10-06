@@ -183,6 +183,26 @@
     font-weight: bold;
 }
 
+/* Tablet Medium Styles */
+@media (max-width: 800px) and (min-width: 701px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .footer-social {
+        justify-content: center;
+    }
+    
+    .footer-contact {
+        align-items: center;
+    }
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     .footer-apple {
