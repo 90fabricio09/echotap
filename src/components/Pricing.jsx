@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/Pricing.css';
+import Card from '../assets/Card.png';
 
 const Pricing = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -43,7 +44,7 @@ const Pricing = () => {
                             Tecnologia NFC que conecta instantaneamente seus contatos ao seu perfil digital.
                         </p>
                         <div className="about-card-preview">
-                            <img src="/src/assets/Card.png" alt="EchoTap Card" className="about-card-image" />
+                            <img src={Card} alt="EchoTap Card" className="about-card-image" />
                         </div>
                     </div>
                     
