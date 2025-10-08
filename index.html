@@ -66,17 +66,88 @@
             "@type": "Product",
             "name": "Cartão de Visita Inteligente com NFC",
             "description": "Cartão de visita personalizado com tecnologia NFC que exibe um site profissional ao ser aproximado de um smartphone",
+            "image": "https://echotap.com.br/src/assets/Card.png",
             "brand": {
               "@type": "Brand",
               "name": "EchoTap"
             },
             "category": "Cartões de Visita Inteligentes",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "127",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Maria Silva"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Excelente cartão NFC! Muito prático para networking. A qualidade é impressionante e o atendimento da EchoTap é excepcional."
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "João Santos"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Revolucionou minha forma de fazer networking. Todos ficam impressionados com a tecnologia. Recomendo muito!"
+              }
+            ],
             "offers": {
               "@type": "Offer",
               "availability": "https://schema.org/InStock",
               "priceCurrency": "BRL",
               "price": "69.90",
-              "priceValidUntil": "2026-12-31"
+              "priceValidUntil": "2026-12-31",
+              "shippingDetails": {
+                "@type": "OfferShippingDetails",
+                "shippingRate": {
+                  "@type": "MonetaryAmount",
+                  "value": "0",
+                  "currency": "BRL"
+                },
+                "deliveryTime": {
+                  "@type": "ShippingDeliveryTime",
+                  "businessDays": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+                  },
+                  "cutoffTime": "14:00",
+                  "handlingTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": "1",
+                    "maxValue": "2",
+                    "unitCode": "DAY"
+                  },
+                  "transitTime": {
+                    "@type": "QuantitativeValue",
+                    "minValue": "1",
+                    "maxValue": "5",
+                    "unitCode": "DAY"
+                  }
+                }
+              },
+              "hasMerchantReturnPolicy": {
+                "@type": "MerchantReturnPolicy",
+                "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                "merchantReturnDays": 30,
+                "returnMethod": "https://schema.org/ReturnByMail",
+                "returnFees": "https://schema.org/FreeReturn"
+              }
             }
           },
           "availability": "https://schema.org/InStock",
